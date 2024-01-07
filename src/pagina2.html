@@ -6,59 +6,67 @@
     <title>Página 2</title>
 </head>
 <body>
-    <h1>Testes usando Forms</h1>
-    <hr>
-    <form method="get">
-        <p>checkbox</p>
-        <label>Op 1</label><input type="checkbox" name="opcao[]" value="op1"> <br>
-        <label>Op 3</label><input type="checkbox" name="opcao[]" value="op2"> <br>
-        <label>Op 3</label><input type="checkbox" name="opcao[]" value="op3"> <br>
-        <p>Radio</p>
-        <p>Escolha:</p>
-        <label>Sim</label><input type="radio" name="escolha" value="true">
-        <label>Não</label><input type="radio" name="escolha" value="false">
+    <header>
+
+    </header>
+    <main>
+        <h1>Testes usando Forms</h1>
+        <hr>
+        <form method="get">
+            <p>checkbox</p>
+            <label>Op 1</label><input type="checkbox" name="opcao[]" value="op1"> <br>
+            <label>Op 3</label><input type="checkbox" name="opcao[]" value="op2"> <br>
+            <label>Op 3</label><input type="checkbox" name="opcao[]" value="op3"> <br>
+            <p>Radio</p>
+            <p>Escolha:</p>
+            <label>Sim</label><input type="radio" name="escolha" value="true">
+            <label>Não</label><input type="radio" name="escolha" value="false">
+            <br>
+            <label for="selecao">Selecione:</label>
+            <select name="seleção" id="selecao">
+                <option value="calabresa">Calabresa</option>
+                <option selected value="mandioca">mandioca</option>
+                <option value="linguica">linguiça</option>
+            </select>
+            <br>
+            <button type="submit">ENVIAR</button>
+        </form>
+        <form action="" method="get">
+            <p>Formulario de cadastro</p>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="name">Nome: </label><input type="text" id="name" name="name">
+                <br>
+                <label for="cpf">CPF: </label><input type="text" id="cpf" name="cpf">
+                <br>
+                <label for="date">Data de Nascimento</label><input type="date" id="date" name="date">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="contact">Telefone: </label><input type="text" id="contact" name="contact">
+                <br>
+                <label for="email">Email: </label> <input type="text" id="email" name="email">
+            </fieldset>
+            <button type="submit">ENVIAR</button>
+        </form>
         <br>
-        <label for="selecao">Selecione:</label>
-        <select name="seleção" id="selecao">
-            <option value="calabresa">Calabresa</option>
-            <option selected value="mandioca">mandioca</option>
-            <option value="linguica">linguiça</option>
-        </select>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.1268141561411!2d-48.29242381397714!3d-10.342947158820111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b3b09720aa4ff%3A0x7bc4ed9e6433fb6e!2sUnitech%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1704206345761!5m2!1spt-BR!2sbr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
-        <button type="submit">ENVIAR</button>
-    </form>
-    <form action="" method="get">
-        <p>Formulario de cadastro</p>
-        <fieldset>
-            <legend>Dados pessoais</legend>
-            <label for="name">Nome: </label><input type="text" id="name" name="name">
-            <br>
-            <label for="cpf">CPF: </label><input type="text" id="cpf" name="cpf">
-            <br>
-            <label for="date">Data de Nascimento</label><input type="date" id="date" name="date">
-            <br>
-        </fieldset>
-        <fieldset>
-            <legend>Contato</legend>
-            <label for="contact">Telefone: </label><input type="text" id="contact" name="contact">
-            <br>
-            <label for="email">Email: </label> <input type="text" id="email" name="email">
-        </fieldset>
-        <button type="submit">ENVIAR</button>
-    </form>
-    <br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d825.1268141561411!2d-48.29242381397714!3d-10.342947158820111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b3b09720aa4ff%3A0x7bc4ed9e6433fb6e!2sUnitech%20Sistemas!5e0!3m2!1spt-BR!2sbr!4v1704206345761!5m2!1spt-BR!2sbr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <br>
-    <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" width="500px">
-    <br>
-    <audio autoplay controls>
-        <source src="../audio/wind_of_change_-_scorpion_.mp3">
-        Não suportado pelo navegador
-    </audio>
-    <br>
-    <a href="../index.html">Página inicial</a>
-    <br>
-    <a href="./pagina3.html">Página 3</a>
-    <hr>
+        <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" width="500px">
+        <br>
+        <audio autoplay controls>
+            <source src="../audio/wind_of_change_-_scorpion_.mp3">
+            Não suportado pelo navegador
+        </audio>
+        <br>
+        <a href="../index.html">Página inicial</a>
+        <br>
+        <a href="./pagina3.html">Página 3</a>
+        <hr>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
