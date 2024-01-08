@@ -41,6 +41,39 @@
             <track src="../video/legenda.vtt" kind="captions" srclang="pt-br" default>
         </video>
         <br>
+        <!--kbd serve para definir que é uma entrada de teclado -->
+        pressione <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar o código após selecionar o texto
+        <!--Texto pre formatado-->
+        <pre>
+            <!--Define que o texto é um código-->
+            <code>
+                soma(int a, int b){
+                    return a+b;
+                }
+            </code>
+        </pre>
+        <details>
+            <summary>O que é isso?</summary>
+            <p>É a tag details e Summary do HTML 5</p>
+        </details>
+        <br>
+        <p>progresso no Curso HTML</p>
+        <progress id ="progress" value="0" max="100" min="0"></progress>
+         <!--Script para ir aumentando o valor da tag progress-->
+        <script>
+            const progress = document.getElementById("progress");
+            if(progress){
+                const intervalo = setInterval(()=>{progress.value +=1;
+                if(progress.value >= 80){
+                    clearInterval(intervalo);
+                }
+            },100);
+            }
+        </script>
+        <p>Essa é a tag progress usando javascript, já a tag meter está logo abaixo</p>
+        <meter value="2" min="0" max="10"></meter>
+        <br>
+        <br>
         <a href="../index.html">Página inicial</a>
         <br>
         <a href="./pagina2.html">Página 3</a>

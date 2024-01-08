@@ -31,6 +31,19 @@
             <br>
             <button type="submit">ENVIAR</button>
         </form>
+        <label for="search">Selecione um navegador:</label>
+        <br>
+        <input list="browser" type="search" name="search" id="search">
+        <datalist id="browser">
+            <!--Se colocar o value e o nome igual não aparece duplicado, sem o value não aparece no chrome-->
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Mozilla">Mozilla</option>
+            <option value="Opera">Opera</option>
+            <option value="Microsoft edge">Microsoft edge</option>
+            <option value="Internet explorer">Internet explorer</option>
+            <option value="Safari">Safari</option>
+        </datalist>
         <form action="" method="get">
             <p>Formulario de cadastro</p>
             <fieldset>
@@ -55,7 +68,8 @@
         <br>
         <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" width="500px">
         <br>
-        <audio autoplay controls>
+        <audio controls></audio>
+        <<!--<audio autoplay controls> para dar autoplay-->
             <source src="../audio/wind_of_change_-_scorpion_.mp3">
             Não suportado pelo navegador
         </audio>
