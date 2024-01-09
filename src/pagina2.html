@@ -10,7 +10,7 @@
 
     </header>
     <main>
-        <h1>Testes usando Forms</h1>
+        <h1 contenteditable>Testes usando Forms</h1>
         <hr>
         <form method="get">
             <p>checkbox</p>
@@ -48,18 +48,22 @@
             <p>Formulario de cadastro</p>
             <fieldset>
                 <legend>Dados pessoais</legend>
-                <label for="name">Nome: </label><input type="text" id="name" name="name">
+                <label for="name">Nome: </label><input type="text" id="name" name="name" autofocus required>
                 <br>
-                <label for="cpf">CPF: </label><input type="text" id="cpf" name="cpf">
+                <label for="cpf">CPF: </label><input type="text" id="cpf" name="cpf" required>
                 <br>
-                <label for="date">Data de Nascimento</label><input type="date" id="date" name="date">
+                <label for="date">Data de Nascimento</label><input type="date" id="date" name="date" required>
                 <br>
             </fieldset>
             <fieldset>
                 <legend>Contato</legend>
                 <label for="contact">Telefone: </label><input type="text" id="contact" name="contact">
                 <br>
-                <label for="email">Email: </label> <input type="text" id="email" name="email">
+                <label for="email">Email: </label> <input type="text" id="email" name="email" placeholder="meuemail@gmail.com" required>
+            </fieldset>
+            <fieldset>
+                <legend>Observações</legend>
+                <textarea name="observacao" id="obs" cols="30" rows="10" minlength="5" maxlength="50"></textarea>
             </fieldset>
             <button type="submit">ENVIAR</button>
         </form>
@@ -68,8 +72,8 @@
         <br>
         <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" width="500px">
         <br>
-        <audio controls></audio>
-        <<!--<audio autoplay controls> para dar autoplay-->
+        <audio controls>
+        <!--<audio autoplay controls> para dar autoplay-->
             <source src="../audio/wind_of_change_-_scorpion_.mp3">
             Não suportado pelo navegador
         </audio>
