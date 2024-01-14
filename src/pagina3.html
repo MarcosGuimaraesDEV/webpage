@@ -64,11 +64,48 @@
             <p>É a tag details e Summary do HTML 5</p>
         </details>
         <br>
+        <p>Imagem padrão</p>
+        <div class="exemplo-img">
+           <picture>
+                <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion">
+           </picture>
+        </div>
+        <p><code>Object-fit: contain</code></p>
+        <div class="exemplo-img">
+           <picture>
+                <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" id="contain">
+           </picture>
+        </div>
+        <p><code>Object-fit: cover</code></p>
+        <div class="exemplo-img">
+           <picture>
+                <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" id="cover">
+           </picture>
+        </div>
+        <p><code>Object-fit: fill</code></p>
+        <div class="exemplo-img">
+           <picture>
+                <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" id="fill">
+           </picture>
+        </div>
+        <p><code>Object-fit: none</code></p>
+        <div class="exemplo-img">
+           <picture>
+                <img src="https://2.bp.blogspot.com/-GXRWdTDSrvM/VrsxjZnFAqI/AAAAAAAAReI/Ua_hnASShHI/s1600/wow_legion.jpg" title="Você não está preparado" alt="Imagem world of warcraft legion" id="none">
+           </picture>
+        </div>
+        <br>
+        <audio controls>
+            <!--<audio autoplay controls> para dar autoplay-->
+            <source src="../audio/wind_of_change_-_scorpion_.mp3">
+            Não suportado pelo navegador
+        </audio>
+        <br>
         <p>progresso no Curso HTML</p>
-        <progress id ="progress" value="0" max="100" min="0"></progress>
-         <!--Script para ir aumentando o valor da tag progress-->
+        <progress id ="HTML" value="0" max="100" min="0"></progress>
+        <!--Script para ir aumentando o valor da tag progress-->
         <script>
-            const progress = document.getElementById("progress");
+            const progress = document.getElementById("HTML");
             if(progress){
                 const intervalo = setInterval(()=>{progress.value +=1;
                 if(progress.value >= 100){
